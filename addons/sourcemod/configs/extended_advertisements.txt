@@ -3,7 +3,7 @@
 	"1"
 	{
 		"type"		"S"
-		"text"		"Next map change is in {TIMELEFT} minutes."
+		"text"		"Next map change is in {TIMELEFT}."
 		"flags"		""
 	}
 	"2"
@@ -14,31 +14,31 @@
 	"3"
 	{
 		"type"		"S"
-		"text"		"Join our Steam group. http://steamcommunity.com/groups/lacledes_lan"
+		"text"		"Join our Steam group! http://steamcommunity.com/groups/lacledes_lan"
 		"flags"		""
 	}		
 	"4"
 	{
 		"type"		"S"
-		"text"		"We are on Twitter. @LacledesLAN"
+		"text"		"We're on Twitter! Tweet us at @LacledesLAN."
 		"flags"		""
 	}	
 	"5"
 	{
 		"type"		"S"
-		"text"		"If there is any problems let us know at the admin table."
+		"text"		"If there are any problems let us know at the admin table."
 		"flags"		""
 	}
 	"6"
 	{
 		"type"		"S"
-		"text"		"Lunch at 2PM -- Dinner at 7PM -- PIZZA Provided"
+		"text"		"Lunch at 2:00 PM -- Dinner at 7:00 PM -- PIZZA provided at dinner!"
 		"flags"		""
 	}
 	"7"
 	{
 		"type"		"S"
-		"text"		"Soda / Water available any 2 for $1.00! While supplies last!"
+		"text"		"Soda / water available any two drinks for $1.00 ...while supplies last!"
 		"flags"		""
 	}
 }
