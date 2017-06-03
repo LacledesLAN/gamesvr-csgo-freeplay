@@ -2,13 +2,17 @@
 
 FROM lacledeslan/gamesvr-srcds-csgo:linux
 
-MAINTAINER Laclede's LAN <contact@lacledeslan.com>
+LABEL maintainer "Laclede's LAN <contact@lacledeslan.com>"
 
 ENV IMAGE="gamesvr-srcds-csgo-freeplay:linux"
+
+HEALTHCHECK NONE
 
 USER root
 
 COPY ./dist /app/bin/
+
+COPY ./dist.linux /app/bin/csgo/
 
 # CLEAN UP
 RUN usermod -l CSGO.Freeplay CSGO
