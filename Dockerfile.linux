@@ -8,15 +8,15 @@ ENV IMAGE="gamesvr-srcds-csgo-freeplay:linux"
 
 HEALTHCHECK NONE
 
-USER root
+# UPDATE USERNAME
+RUN usermod -l CSGO.Freeplay CSGO
+
+USER CSGO.Freeplay
 
 COPY ./dist /app/bin/
 
 COPY ./dist.linux /app/bin/csgo/
 
-# CLEAN UP
-RUN usermod -l CSGO.Freeplay CSGO
-
-USER CSGO.Freeplay
-	
 WORKDIR /app/bin/
+
+ENTRYPOINT ["/bin/sh"]
