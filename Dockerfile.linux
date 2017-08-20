@@ -1,20 +1,20 @@
 # escape=`
 
-FROM lacledeslan/gamesvr-srcds-csgo:linux
+FROM lacledeslan/gamesvr-csgo
 
 LABEL maintainer "Laclede's LAN <contact@lacledeslan.com>"
 
-ENV IMAGE="gamesvr-srcds-csgo-freeplay:linux"
+ENV IMAGE="gamesvr-csgo-freeplay"
 
 HEALTHCHECK NONE
 
+COPY ./dist /app/csgo/
+
+COPY ./dist.linux /app/csgo/
+
 # UPDATE USERNAME
-RUN usermod -l CSGO.Freeplay CSGO
+RUN usermod -l CSGOFreeplay CSGO
 
-USER CSGO.Freeplay
+USER CSGOFreeplay
 
-COPY ./dist /app/bin/
-
-COPY ./dist.linux /app/bin/csgo/
-
-WORKDIR /app/bin/
+WORKDIR /app/
