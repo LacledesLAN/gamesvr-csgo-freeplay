@@ -2,43 +2,34 @@
 {
 	"1"
 	{
-		"type"		"S"
-		"text"		"Next map change is in {TIMELEFT}."
-		"flags"		""
+		"type"		"C"
+		"text"		"www.domain.com"
 	}
 	"2"
 	{
-		"type"		"S"
-		"text"		"Current map: {DEFAULT}{CURRENTMAP}"
+		"type"		"CH"
+		"text"		"contact@domain.com"
 	}
 	"3"
 	{
-		"type"		"S"
-		"text"		"Join our Steam group! http://steamcommunity.com/groups/lacledes_lan"
-		"flags"		""
-	}		
+		"type"		"M"
+		"text"		"Next map is {NEXTMAP} in {TIMELEFT} minutes."
+		"flags"		"cft"
+	}
 	"4"
 	{
 		"type"		"S"
-		"text"		"We're on Twitter! Tweet us at @LacledesLAN."
-		"flags"		""
-	}	
+		"text"		"{GREEN}Current {LIGHTGREEN}Map: {DEFAULT}{CURRENTMAP}"
+	}
 	"5"
 	{
-		"type"		"S"
-		"text"		"If there are any problems let us know at the admin table."
-		"flags"		""
+		"type"		"T"
+		"text"		"{ORANGE}friendly fire is {CONVAR_BOOL:mp_friendlyfire}."
 	}
 	"6"
 	{
 		"type"		"S"
-		"text"		"Lunch at 2:00 PM -- Dinner at 7:00 PM -- PIZZA provided at dinner!"
-		"flags"		""
-	}
-	"7"
-	{
-		"type"		"S"
-		"text"		"Soda / water available any two drinks for $1.00 ...while supplies last!"
-		"flags"		""
+		"text"		"{GREEN}Admins: Sourcemod version is {CONVAR:sourcemod_version} and advertisement plugin version is {CONVAR:sm_extended_advertisements_version}"
+		"flags"		"z"
 	}
 }
