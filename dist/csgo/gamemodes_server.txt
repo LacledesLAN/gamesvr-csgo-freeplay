@@ -1,4 +1,3 @@
-//http://www.configcreator.com/create/csgo/gamemodes_server.txt/g4NmVkMj/2
 "Gamemodes_Server.txt"
 {
 	"gameTypes"
