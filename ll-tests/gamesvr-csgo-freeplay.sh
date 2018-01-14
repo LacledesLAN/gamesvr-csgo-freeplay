@@ -1,5 +1,5 @@
 #!/bin/bash -i
-declare LLCK_LOGFILE="/app/ll-tests/gamesvr-blackmesa.log";
+declare LLCK_LOGFILE="/app/ll-tests/gamesvr-csgo-freeplay.log";
 declare LLCK_CMD="/app/srcds_run -game csgo +game_type 1 +game_mode 0 -tickrate 128 +mapgroup ll_arms +map ar_baggage -insecure -norestart +sv_lan 1";
 declare LLCK_CMD_TIMEOUT=60;
 
