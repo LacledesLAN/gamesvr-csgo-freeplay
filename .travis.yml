@@ -12,6 +12,7 @@ services:
 
 script:
   - docker version
+  - travis_wait 15 docker pull lacledeslan/gamesvr-csgo
   - docker build --no-cache --tag lltest/gamesvr-csgo-freeplay --tag lacledeslan/gamesvr-csgo-freeplay --build-arg BUILDNODE=TravisCI -f Dockerfile.linux .
   - docker run -it --rm lltest/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freeplay.sh
 
