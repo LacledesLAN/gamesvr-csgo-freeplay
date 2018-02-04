@@ -12,7 +12,7 @@ services:
 
 script:
   - docker version
-  - docker build --no-cache --tag lltest/gamesvr-csgo-freeplay --tag lacledeslan/gamesvr-csgo-freeplay --build-arg BUILDNODE=TravisCI ./linux
+  - docker build --no-cache --tag lltest/gamesvr-csgo-freeplay --tag lacledeslan/gamesvr-csgo-freeplay --build-arg BUILDNODE=TravisCI -f Dockerfile.linux .
   - docker run -it --rm lltest/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freeplay.sh
 
 notifications:
