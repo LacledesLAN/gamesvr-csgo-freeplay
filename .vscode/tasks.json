@@ -46,7 +46,7 @@
         {
             "label": "Download git submodules",
             "type": "shell",
-            "command": "git submodule update --recursive;",
+            "command": "git submodule foreach git pull origin master;",
             "identifier": "download-sub-modules",
             "problemMatcher": [],
             "promptOnClose": true
@@ -54,7 +54,7 @@
         {
             "label": "Update git submodules",
             "type": "shell",
-            "command": "git submodule foreach git pull origin master;",
+            "command": "git submodule update --recursive --remote;",
             "problemMatcher": [],
             "promptOnClose": true
         }
