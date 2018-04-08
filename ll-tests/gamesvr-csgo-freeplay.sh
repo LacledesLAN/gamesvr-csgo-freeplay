@@ -153,6 +153,9 @@ should_have 'Game.dll loaded for "Counter-Strike: Global Offensive"' 'srcds_run 
 should_have 'Server is hibernating' 'srcds_run succesfully hibernated';
 should_lack 'map load failed:' 'Server was able to load custom-content the map'
 
+# Verify server responds to commands
+should_echo "say STARTING COMMAND TESTS" 'Console: STARTING COMMAND TESTS';
+
 # LL Settings
 should_have 'Server logging enabled.' 'Logging is enabled';
 should_have 'Server logging data to file logs/' 'Server is logging to the logs directory';
