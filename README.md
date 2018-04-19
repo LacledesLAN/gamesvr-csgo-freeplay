@@ -14,7 +14,7 @@ docker pull lacledeslan/gamesvr-csgo-freeplay;
 ### Run Self-Tests
 
 ```shell
-docker run --rm lacledeslan/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freeplay.sh
+docker run --rm lacledeslan/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freeplay.sh;
 ```
 
 ### Run Simple, Interactive Server
