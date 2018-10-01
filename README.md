@@ -1,4 +1,6 @@
-# LL Freeplay Counter-Strike: Global Offensive Dedicated Server in Docker
+![thumb-gamesvr-csgo-freeplay](https://raw.githubusercontent.com/LacledesLAN/gamesvr-csgo-freeplay/master/.misc/thumb-gamesvr-csgo-freeplay.png "thumb-gamesvr-csgo-freeplay")
+
+This repository is maintained by [Laclede's LAN](https://lacledeslan.com). Its contents are heavily tailored and tweaked for use at our charity LAN-Parties. For third-parties we recommend using this repo only as a reference example and then building your own using [gamesvr-csgo](https://github.com/LacledesLAN/gamesvr-csgo) as the base image for your customized server.
 
 ## Linux Container
 
@@ -24,3 +26,7 @@ docker run --rm lacledeslan/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freepl
 ```shell
 docker run --rm lacledeslan/gamesvr-csgo-freeplay  ./srcds_run -game csgo +game_type 1 +game_mode 0 -tickrate 128 +mapgroup ll_arms +map ar_baggage +sv_lan 1
 ```
+
+## Getting Started with Game Servers in Docker
+
+[Docker](https://docs.docker.com/) is an open-source project that bundles applications into lightweight, portable, self-sufficient containers. For a crash course on running Dockerized game servers check out [Using Docker for Game Servers](https://github.com/LacledesLAN/README.1ST/blob/master/GameServers/DockerAndGameServers.md). For tips, tricks, and recommended tools for working with Laclede's LAN Dockerized game server repos see the guide for [Working with our Game Server Repos](https://github.com/LacledesLAN/README.1ST/blob/master/GameServers/WorkingWithOurRepos.md). You can also browse all of our other Dockerized game servers: [Laclede's LAN Game Servers Directory](https://github.com/LacledesLAN/README.1ST/tree/master/GameServers).
