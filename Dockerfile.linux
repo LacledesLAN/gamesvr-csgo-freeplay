@@ -16,8 +16,11 @@ LABEL maintainer="Laclede's LAN <contact @lacledeslan.com>" `
       org.label-schema.vcs-url="https://github.com/LacledesLAN/gamesvr-csgo-freeplay"
 
 COPY --chown=CSGO:root ./sourcemod.linux /app/csgo/
+RUN true
 COPY --chown=CSGO:root ./sourcemod-configs /app/csgo/
+RUN true
 COPY --chown=CSGO:root ./dist /app/
+RUN true
 COPY --chown=CSGO:root ./ll-tests /app/ll-tests
 
 # UPDATE USERNAME & ensure permissions
