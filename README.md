@@ -4,6 +4,7 @@ This repository is maintained by [Laclede's LAN](https://lacledeslan.com). Its c
 
 ## Linux Container
 
+[![Build Status](https://dev.azure.com/LacledesLAN/Game%20Servers/_apis/build/status/gamesvr-csgo-freeplay)](https://dev.azure.com/LacledesLAN/Game%20Servers/_build/latest?definitionId=3)
 [![](https://images.microbadger.com/badges/version/lacledeslan/gamesvr-csgo-freeplay.svg)](https://microbadger.com/images/lacledeslan/gamesvr-csgo-freeplay "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/lacledeslan/gamesvr-csgo-freeplay.svg)](https://microbadger.com/images/lacledeslan/gamesvr-csgo-freeplay "Get your own image badge on microbadger.com")
 
