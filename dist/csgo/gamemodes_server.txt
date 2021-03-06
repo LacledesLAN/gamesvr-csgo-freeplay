@@ -58,15 +58,7 @@
                 "de_overpass" "10"
                 "de_train" "11"
                 "de_vertigo" "12"
-                "cs_agency" "13"
-                "cs_downtown" "14"
-                "cs_museum" "15"
-                "cs_siege" "16"
-                "de_prodigy" "17"
-                "de_ruins" "18"
-                "de_season" "19"
-                "de_tulip" "20"
-                "de_vegas_csgo_v7" "21"
+                "de_prodigy" "13"
             }
         }
         "ll_orange"
