@@ -59,7 +59,7 @@ game_mode 1; game_type 1; exec gamemode_demolition; exec gamemode_demolition_ser
 ### Demolition
 
 ```shell
-game_mode 2; game_type 1; exec gamemode_deathmatch; exec gamemode_deathmatch_server; mapgroup mg_deathmatch; mp_restartgame 1; map de_bank
+game_mode 2; game_type 1; exec gamemode_deathmatch; exec gamemode_deathmatch_server; mapgroup mg_deathmatch; map de_bank
 ```
 
 ## Getting Started with Game Servers in Docker
