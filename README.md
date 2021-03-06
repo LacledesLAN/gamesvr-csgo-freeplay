@@ -35,31 +35,31 @@ Use to switch the game mode on an already running freeplay server.
 ### Arms Race
 
 ```shell
-game_mode 0; game_type 0; exec gamemode_casual; exec gamemode_casual_server; mapgroup ll_bomb; map de_cache
+game_mode 0; game_type 1; mapgroup mg_armsrace; exec gamemode_armsrace; exec gamemode_armsrace_server; mapgroup mg_armsrace; map ar_shoots
 ```
 
 ### Classic Casual
 
 ```shell
-game_mode 1; game_type 0; exec gamemode_competitive; exec gamemode_competitive_server; mapgroup ll_bomb; map de_dust2
+game_mode 0; game_type 0; exec gamemode_casual; exec gamemode_casual_server; mapgroup ll_bomb; map de_cache
 ```
 
 ### Classic Competitive
 
 ```shell
-game_mode 0; game_type 1; mapgroup mg_armsrace; exec gamemode_armsrace; exec gamemode_armsrace_server; mapgroup mg_armsrace; map ar_shoots
+game_mode 1; game_type 0; exec gamemode_competitive; exec gamemode_competitive_server; mapgroup ll_bomb; map de_dust2
 ```
 
 ### Deathmatch
 
 ```shell
-game_mode 1; game_type 1; exec gamemode_demolition; exec gamemode_demolition_server; mapgroup mg_demolition; map de_lake
+game_mode 2; game_type 1; exec gamemode_deathmatch; exec gamemode_deathmatch_server; mapgroup mg_deathmatch; map de_bank
 ```
 
 ### Demolition
 
 ```shell
-game_mode 2; game_type 1; exec gamemode_deathmatch; exec gamemode_deathmatch_server; mapgroup mg_deathmatch; map de_bank
+game_mode 1; game_type 1; exec gamemode_demolition; exec gamemode_demolition_server; mapgroup mg_demolition; map de_lake
 ```
 
 ## Getting Started with Game Servers in Docker
