@@ -28,6 +28,40 @@ docker run --rm lacledeslan/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freepl
 docker run --rm lacledeslan/gamesvr-csgo-freeplay  ./srcds_run -game csgo +game_type 1 +game_mode 0 -tickrate 128 +mapgroup ll_arms +map ar_baggage +sv_lan 1
 ```
 
+## Game Mode Switch Snippets
+
+Use to switch the game mode on an already running freeplay server.
+
+### Arms Race
+
+```shell
+game_mode 0; game_type 0; exec gamemode_casual; exec gamemode_casual_server; mapgroup ll_bomb; map de_cache
+```
+
+### Classic Casual
+
+```shell
+game_mode 1; game_type 0; exec gamemode_competitive; exec gamemode_competitive_server; mapgroup ll_bomb; map de_dust2
+```
+
+### Classic Competitive
+
+```shell
+game_mode 0; game_type 1; mapgroup mg_armsrace; exec gamemode_armsrace; exec gamemode_armsrace_server; mapgroup mg_armsrace; map ar_shoots
+```
+
+### Deathmatch
+
+```shell
+game_mode 1; game_type 1; exec gamemode_demolition; exec gamemode_demolition_server; mapgroup mg_demolition; map de_lake
+```
+
+### Demolition
+
+```shell
+game_mode 2; game_type 1; exec gamemode_deathmatch; exec gamemode_deathmatch_server; mapgroup mg_deathmatch; mp_restartgame 1; map de_bank
+```
+
 ## Getting Started with Game Servers in Docker
 
 [Docker](https://docs.docker.com/) is an open-source project that bundles applications into lightweight, portable, self-sufficient containers. For a crash course on running Dockerized game servers check out [Using Docker for Game Servers](https://github.com/LacledesLAN/README.1ST/blob/master/GameServers/DockerAndGameServers.md). For tips, tricks, and recommended tools for working with Laclede's LAN Dockerized game server repos see the guide for [Working with our Game Server Repos](https://github.com/LacledesLAN/README.1ST/blob/master/GameServers/WorkingWithOurRepos.md). You can also browse all of our other Dockerized game servers: [Laclede's LAN Game Servers Directory](https://github.com/LacledesLAN/README.1ST/tree/master/GameServers).
