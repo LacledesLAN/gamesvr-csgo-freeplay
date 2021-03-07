@@ -1,5 +1,4 @@
-//built using https://beta.configcreator.com/create/csgo/gamemodes_server.txt
-
+//https://beta.configcreator.com/create/csgo/gamemodes_server.txt
 "Gamemodes_Server.txt"
 {
     "gameTypes"
@@ -12,14 +11,18 @@
                 {
                     "mapgroupsMP"
                     {
+                        "ll_arms"
                         "ll_bomb"
+                        "ll_orange"
                     }
                 }
                 "competitive"
                 {
                     "mapgroupsMP"
                     {
+                        "ll_arms"
                         "ll_bomb"
+                        "ll_orange"
                     }
                 }
             }
@@ -32,7 +35,7 @@
                 {
                     "mapgroupsMP"
                     {
-                        "ll_bomb"
+                        "ll_arms"
                     }
                 }
             }
@@ -40,25 +43,61 @@
     }
     "mapgroups"
     {
+        "ll_arms"
+        {
+            "name" "ll_arms"
+            "maps"
+            {
+                "ar_baggage" "0"
+                "ar_brownstone" "1"
+                "ar_tipsy_b3" "2"
+                "ar_shoots" "3"
+                "ar_industry" "4"
+                "ar_lunacy" "5"
+                "ar_monastery" "6"
+                "ar_poolstay" "7"
+                "ar_district" "8"
+                "ar_dizzy" "9"
+                "ar_chess" "10"
+                "fy_hangemhigh" "11"
+            }
+        }
         "ll_bomb"
         {
             "name" "ll_bomb"
             "maps"
             {
                 "de_aztec" "0"
-                "de_blackgold" "1"
-                "de_castle" "2"
-                "de_cbble" "3"
-                "de_dust" "4"
-                "de_dust2" "5"
-                "de_inferno" "6"
-                "de_mist" "7"
-                "de_nuke" "8"
-                "de_overgrown" "9"
-                "de_overpass" "10"
-                "de_train" "11"
-                "de_vertigo" "12"
-                "de_prodigy" "13"
+                "de_cbble" "1"
+                "de_dust" "2"
+                "de_inferno" "3"
+                "de_nuke" "4"
+                "de_overpass" "5"
+                "de_train" "6"
+                "de_vertigo" "7"
+                "de_tulip" "8"
+                "de_sparity_infinity" "9"
+                "de_season" "10"
+                "de_santorini" "11"
+                "de_ruins" "12"
+                "de_resort" "13"
+                "de_rats_1337" "14"
+                "de_overgrown" "15"
+                "de_mist" "16"
+                "de_log" "17"
+                "de_library" "18"
+                "de_favela" "19"
+                "de_facade" "20"
+                "de_empire" "21"
+                "de_dust_classic" "22"
+                "de_dust2_classic" "23"
+                "de_dust2" "24"
+                "de_corruption_csgo" "25"
+                "de_coast" "26"
+                "de_castle" "27"
+                "de_blackgold" "28"
+                "de_bagra_rc8" "29"
+                "de_arcade_v2" "30"
             }
         }
         "ll_orange"
@@ -66,8 +105,10 @@
             "name" "ll_orange"
             "maps"
             {
-                "clienttest-pillar" "0"
-                "poolday" "1"
+                "poolday" "0"
+                "clienttest-pillar" "1"
+                "de_orange" "2"
+                "orangebox_warmup_day" "3"
             }
         }
     }
