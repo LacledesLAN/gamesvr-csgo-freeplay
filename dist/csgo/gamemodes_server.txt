@@ -11,14 +11,18 @@
                 {
                     "mapgroupsMP"
                     {
+                        "ll_arms"
                         "ll_bomb"
+                        "ll_orange"
                     }
                 }
                 "competitive"
                 {
                     "mapgroupsMP"
                     {
+                        "ll_arms"
                         "ll_bomb"
+                        "ll_orange"
                     }
                 }
             }
@@ -94,6 +98,17 @@
                 "de_blackgold" "28"
                 "de_bagra_rc8" "29"
                 "de_arcade_v2" "30"
+            }
+        }
+        "ll_orange"
+        {
+            "name" "ll_orange"
+            "maps"
+            {
+                "poolday" "0"
+                "clienttest-pillar" "1"
+                "de_orange" "2"
+                "orangebox_warmup_day" "3"
             }
         }
     }
