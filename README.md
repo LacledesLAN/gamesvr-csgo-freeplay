@@ -24,8 +24,34 @@ docker run --rm lacledeslan/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freepl
 
 ### Run Simple, Interactive Server
 
+#### Arms Race
+
 ```shell
 docker run --rm lacledeslan/gamesvr-csgo-freeplay  ./srcds_run -game csgo +game_type 1 +game_mode 0 -tickrate 128 +mapgroup ll_arms +map ar_baggage +sv_lan 1
+```
+
+#### Classic Casual
+
+```shell
+docker run --rm lacledeslan/gamesvr-csgo-freeplay  ./srcds_run -game csgo +game_type 0 +game_mode 0 -tickrate 128 +mapgroup ll_bomb +map de_cache +sv_lan 1
+```
+
+#### Classic Competitive
+
+```shell
+docker run --rm lacledeslan/gamesvr-csgo-freeplay  ./srcds_run -game csgo +game_type 0 +game_mode 1 -tickrate 128 +mapgroup ll_bomb +map de_dust2 +sv_lan 1
+```
+
+#### Deathmatch
+
+```shell
+docker run --rm lacledeslan/gamesvr-csgo-freeplay  ./srcds_run -game csgo +game_type 1 +game_mode 2 -tickrate 128 +mapgroup mg_deathmatch +map de_bank +sv_lan 1
+```
+
+#### Demolition
+
+```shell
+docker run --rm lacledeslan/gamesvr-csgo-freeplay  ./srcds_run -game csgo +game_type 1 +game_mode 1 -tickrate 128 +mapgroup mg_demolition +map de_lake +sv_lan 1
 ```
 
 ## Game Mode Switch Snippets
