@@ -4,12 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build",
+            "label": "Build Linux Image",
             "type": "shell",
-            "command": "docker pull lacledeslan/gamesvr-csgo; docker build . -f Dockerfile.linux -t ll/gamesvr-csgo-freeplay --no-cache --build-arg BUILDNODE=$env:computername;",
-            "dependsOn": "download-sub-modules",
+            "command": "docker pull lacledeslan/gamesvr-csgo; docker build . --rm -f Dockerfile.linux -t ll/gamesvr-csgo-freeplay --no-cache --build-arg BUILDNODE=$(hostname);",
+            "windows": {
+                "command": "docker pull lacledeslan/gamesvr-csgo; docker build . --rm -f Dockerfile.linux -t ll/gamesvr-csgo-freeplay --no-cache --build-arg BUILDNODE=$env:computername;",
+            },
+            "dependsOn": "Download git submodules",
             "group": "build",
-            "identifier": "build-image",
             "problemMatcher": [],
             "promptOnClose": true
         },
@@ -17,7 +19,7 @@
             "label": "Build & Execute Self Tests",
             "type": "shell",
             "command": "docker run -it --rm ll/gamesvr-csgo-freeplay ./ll-tests/gamesvr-csgo-freeplay.sh;",
-            "dependsOn": "build-image",
+            "dependsOn": "Build Linux Image",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -29,7 +31,7 @@
             "label": "Build & Run Interactive Server",
             "type": "shell",
             "command": "docker run -it --net=host ll/gamesvr-csgo-freeplay ./srcds_run -game csgo +game_type 1 +game_mode 0 -tickrate 128 +mapgroup ll_arms +map ar_baggage +sv_lan 1 +rcon_password \"test123\";",
-            "dependsOn": "build-image",
+            "dependsOn": "Build Linux Image",
             "group": "build",
             "problemMatcher": [],
             "promptOnClose": true
@@ -38,7 +40,7 @@
             "label": "Build & Shell In",
             "type": "shell",
             "command": "docker run -it --net=host --rm ll/gamesvr-csgo-freeplay;",
-            "dependsOn": "build-image",
+            "dependsOn": "Build Linux Image",
             "group": "build",
             "problemMatcher": [],
             "promptOnClose": true
@@ -47,7 +49,6 @@
             "label": "Download git submodules",
             "type": "shell",
             "command": "git submodule foreach git pull origin master;",
-            "identifier": "download-sub-modules",
             "problemMatcher": [],
             "promptOnClose": true
         },
