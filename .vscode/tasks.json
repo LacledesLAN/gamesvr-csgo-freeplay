@@ -6,9 +6,9 @@
         {
             "label": "Build Linux Image",
             "type": "shell",
-            "command": "docker pull lacledeslan/gamesvr-csgo; docker build . --rm -f Dockerfile.linux -t ll/gamesvr-csgo-freeplay --no-cache --build-arg BUILDNODE=$(hostname);",
+            "command": "docker pull lacledeslan/gamesvr-csgo; docker build . --rm -f linux.Dockerfile -t ll/gamesvr-csgo-freeplay --no-cache --build-arg BUILDNODE=$(hostname);",
             "windows": {
-                "command": "docker pull lacledeslan/gamesvr-csgo; docker build . --rm -f Dockerfile.linux -t ll/gamesvr-csgo-freeplay --no-cache --build-arg BUILDNODE=$env:computername;",
+                "command": "docker pull lacledeslan/gamesvr-csgo; docker build . --rm -f linux.Dockerfile -t ll/gamesvr-csgo-freeplay --no-cache --build-arg BUILDNODE=$env:computername;",
             },
             "dependsOn": "Download git submodules",
             "group": "build",
