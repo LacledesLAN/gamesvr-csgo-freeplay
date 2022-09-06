@@ -2,11 +2,6 @@
 set -e
 
 
-##
-## This script will do a full update to gamesvr-csgo, so it can then be pushed to
-## DockerHUB
-##
-
 echo -e '\n\033[1m[Preflight Checks]\033[0m'
 echo -e "Docker client version: '$(docker version --format '{{.Client.Version}}')'"
 echo -e "Docker server version: '$(docker version --format '{{.Server.Version}}')'"
